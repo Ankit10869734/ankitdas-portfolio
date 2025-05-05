@@ -10,9 +10,37 @@
     html {
       scroll-behavior: smooth;
     }
+
+    /* NEW: Vertical left branding */
+    .left-brand {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 80px;
+      background-color: #111;
+      color: white;
+      font-size: 28px;
+      font-family: 'Arial', sans-serif;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+    }
+
+    body {
+      margin-left: 80px; /* To avoid overlap with the left branding */
+    }
   </style>
 </head>
 <body>
+
+  <!-- NEW: Branding on the left -->
+  <div class="left-brand">
+    Ankit Das
+  </div>
 
   <div class="hero-image">
     <img src="front.png" alt="Ankit Das" />
