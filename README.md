@@ -4,12 +4,6 @@ This is a clean, responsive, and modern personal portfolio website built with HT
 
 ---
 
-## Live Preview
-
-🌐 [View Portfolio Online](https://https://github.com/Ankit10869734/ankitdas-portfolio)
-
----
-
 ## 📌 Features
 
 - ✅ Fully responsive design (mobile-first)
