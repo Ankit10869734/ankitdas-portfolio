@@ -6,7 +6,7 @@ This is a clean, responsive, and modern personal portfolio website built with HT
 
 ## Live Preview
 
-🌐 [View Portfolio Online](https://your-github-username.github.io/your-repo-name/)
+🌐 [View Portfolio Online](https://your-github-username.github.io/Ankit10869734/ankitdas-portfolio)
 
 ---
 
