@@ -34,7 +34,10 @@
       say('Thanks! Your message is on its way.', 'ok'); f.reset();
     }).catch(function (err) {
       console.error('EmailJS error:', err);
-      say('Could not send (' + esc(err.message) + '). <a href="' + mailto(v) + '">Email me directly</a>.', 'err');
+      var detail = /412|invalid grant|reconnect/i.test(err.message)
+        ? 'The contact email service needs its Gmail connection refreshed.'
+        : 'The message could not be sent.';
+      say(detail + ' <a href="' + mailto(v) + '">Email me directly</a>.', 'err');
     }).then(function () { b.disabled = false; lb.textContent = 'Send message'; });
   });
 })();
