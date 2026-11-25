@@ -3,6 +3,9 @@
   var d = document, $ = function (s) { return d.querySelector(s); }, $$ = function (s) { return [].slice.call(d.querySelectorAll(s)); };
   var rm = matchMedia('(prefers-reduced-motion: reduce)').matches, fine = matchMedia('(hover:hover) and (pointer:fine)').matches;
   $('#year').textContent = new Date().getFullYear();
+  var nav = $('.nav');
+  function updateNav() { nav.classList.toggle('scrolled', scrollY > 40); }
+  addEventListener('scroll', updateNav, { passive: true }); updateNav();
 
   /* split hero name into letters */
   var chs = [];
