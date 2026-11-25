@@ -9,6 +9,9 @@
 .tools{display:flex;gap:6px}
 .ib{width:36px;height:36px;border-radius:50%;border:1px solid var(--bd);display:grid;place-items:center;transition:border-color .3s,transform .5s var(--ease)}
 .ib:hover{border-color:var(--accent);transform:rotate(30deg)}#menuBtn{display:none}
+/* Keep the navigation links visible while the hero is scrolled away. */
+.nav.scrolled .logo,.nav.scrolled .tools{display:none}
+.nav.scrolled{justify-content:center;padding:8px 18px}
 /* circle-arrow button (Solare style) */
 .btn{position:relative;display:inline-flex;align-items:center;height:40px}
 .btn__c{display:flex;align-items:center;height:100%;padding:0 62px 0 22px;border-radius:999px;background:var(--fg);color:var(--bg);font-weight:700;font-size:.9rem;clip-path:inset(0 40px 0 0 round 20px);transition:clip-path .75s var(--ease)}
