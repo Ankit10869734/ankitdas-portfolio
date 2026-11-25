@@ -17,8 +17,5 @@
       store = t; try { localStorage.setItem('theme', t); } catch (e) {}
       theme(t);
     };
-    document.getElementById('hueBtn').onclick = function () {
-      hue((parseInt(getComputedStyle(r).getPropertyValue('--h'), 10) + 47 + Math.floor(Math.random() * 120)) % 360);
-    };
   });
 })();
