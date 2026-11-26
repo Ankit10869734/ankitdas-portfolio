@@ -2,15 +2,18 @@
 <html lang="en" data-theme="dark">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Ankit Das | Full-Stack &amp; ML Developer</title>
-<meta name="description" content="Ankit Das, B.Tech CSE student at KIIT University building full-stack apps with Django and React, and machine learning projects in Python.">
+<title>Ankit Das | Software Developer</title>
+<meta name="description" content="Ankit Das, Computer Science and Engineering student at KIIT University. Full-stack development with Django and React, Android development in Kotlin, and machine learning in Python. Open to Software Developer and Software Engineer roles.">
 <meta name="theme-color" content="#0d1117">
+<meta property="og:title" content="Ankit Das | Software Developer">
+<meta property="og:description" content="Full-stack, Android and machine learning projects by Ankit Das, B.Tech CSE at KIIT University.">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230d1117'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='%2358a6ff' font-family='Georgia' font-weight='700'%3EA%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/components.css">
 <script src="js/theme.js"></script>
-<noscript><style>.rv,.ch,.m>span,.nav{opacity:1!important;transform:none!important}</style></noscript>
+<noscript><style>.rv,.ch,.m>span,.nav{opacity:1!important;transform:none!important}.gate,.sh{display:none!important}.intro{height:auto!important}.stage{position:relative!important}</style></noscript>
 </head>
 <body>
 <div class="bar" id="bar"></div><div class="grain" aria-hidden="true"></div>
@@ -18,109 +21,111 @@
   <a href="#home" class="logo" aria-label="Ankit Das, home">A<b>.</b>D</a>
   <nav class="links" id="links" aria-label="Main"><a href="#about">About</a><a href="#projects">Projects</a><a href="#journey">Journey</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
   <div class="tools">
+    <button class="ib" id="hueBtn" aria-label="Shuffle accent colour" title="New colour">✺</button>
     <button class="ib" id="themeBtn" aria-label="Toggle light or dark theme" title="Light / dark">◐</button>
     <button class="ib" id="menuBtn" aria-label="Menu" aria-expanded="false">≡</button>
   </div>
 </header>
 <main>
-<section class="hero" id="home">
-  <span class="orb" id="orb" aria-hidden="true"></span>
-  <div class="hero-in">
-    <span class="pill"><span class="dot"></span>Open to internships &amp; opportunities</span>
-    <h1 class="name" aria-label="Ankit Das"><span class="w" aria-hidden="true">Ankit</span> <span class="w it" aria-hidden="true">Das</span></h1>
-    <p class="roles"><span class="m" style="--i:0"><span>Full-stack web apps,</span></span><span class="m" style="--i:1"><span>machine learning models,</span></span><span class="m" style="--i:2"><span>secure, reliable software.</span></span></p>
-    <p class="lead">B.Tech Computer Science student at KIIT University. I build with Django and React, and train machine learning models in Python.</p>
-    <div class="cta">
-      <a class="btn" href="#contact"><span class="btn__c">Get in touch</span><span class="btn__o"><i>→</i><i>→</i></span></a>
-      <a class="btn alt" href="#projects"><span class="btn__c">See my work</span><span class="btn__o"><i>→</i><i>→</i></span></a>
+<section class="intro" id="home">
+  <div class="stage">
+
+    <!-- Home scene: translucent photo behind the introduction text -->
+    <div class="home">
+      <div class="ph-wrap">
+      <figure class="ph" aria-label="Portrait of Ankit Das">
+        <span class="ph-ring g" aria-hidden="true"></span><span class="ph-ring" aria-hidden="true"></span>
+        <div class="ph-card">
+          <img src="photo.png" alt="Ankit Das" decoding="async">
+          <span class="ph-mono" aria-hidden="true">A.D</span>
+        </div>
+      </figure>
+      </div>
+      <div class="hero-in">
+        <div class="hero-txt">
+          <span class="pill"><span class="dot"></span>Open to Software Engineering roles</span>
+          <h1 class="name" aria-label="Ankit Das"><span class="w" aria-hidden="true">Ankit</span><span class="w it" aria-hidden="true">Das</span></h1>
+          <p class="roles"><span class="m"><span>Full-stack web development,</span></span><span class="m"><span>Android application development,</span></span><span class="m"><span>and applied machine learning.</span></span></p>
+          <p class="lead">Computer Science and Engineering student at KIIT University, Bhubaneswar. I build web applications with Django and React, Android applications with Kotlin and Jetpack Compose, and machine learning models in Python.</p>
+          <div class="cta"><a class="btn" href="#projects"><span class="btn__c">View projects</span><span class="btn__o"><i>→</i><i>→</i></span></a><a class="btn alt" href="#contact"><span class="btn__c">Contact me</span><span class="btn__o"><i>→</i><i>→</i></span></a></div>
+        </div>
+      </div>
     </div>
+
+    <!-- Intro gate: opens like a portal as you scroll -->
+    <div class="gate" id="gate" aria-hidden="true">
+      <div class="gate-fx"></div>
+    </div>
+    <span class="portal" id="portal" aria-hidden="true"></span>
+    <div class="gate-t" id="gateT" aria-hidden="true"><span>Ankit</span> <em>Das</em></div>
+    <div class="gate-b" id="gateB" aria-hidden="true"><span class="gate-n"><b id="cnt">000</b> / 100</span><span class="gate-r">Software Developer</span></div>
+    <button class="sh" id="cue" type="button"><span class="sh-i">↓</span><span>Scroll to enter</span></button>
   </div>
-  <a class="sh" href="#about" aria-label="Scroll to about">↓</a>
 </section>
+
 <section class="sec clip" id="about"><div class="wrap">
   <span class="pill rv">About</span>
-  <h2 class="h2 rv" style="--d:1">Curious by default, <em>shipping</em> by habit.</h2>
-  <div class="grid2">
-    <div>
-      <p class="big rv" style="--d:2">I'm a Computer Science and Engineering student at Kalinga Institute of Industrial Technology (KIIT), Bhubaneswar. I enjoy the full journey of a product: modelling data, building APIs, and crafting the interface people actually touch.</p>
-      <p class="big rv" style="--d:3">Beyond web development, I've trained machine learning models for prediction tasks and explored ethical hacking, learning how systems break so I can build them to hold up.</p>
-    </div>
-    <div class="stats">
-      <div class="stat rv" style="--d:2"><b data-count="7.94" data-dec="2">0</b><span>Current CGPA</span></div>
-      <div class="stat rv" style="--d:3"><b data-count="95" data-suf="%">0</b><span>Heart-disease model accuracy</span></div>
-      <div class="stat rv" style="--d:4"><b data-count="3">0</b><span>Full projects built</span></div>
-      <div class="stat rv" style="--d:5"><b data-count="2">0</b><span>Trainings &amp; internships</span></div>
-    </div>
-  </div>
+  <h2 class="h2 rv" style="--d:1">Engineering software, <em>end to end</em>.</h2>
+  <p class="big rv" style="--d:2">Computer Science and Engineering student at KIIT University with hands-on experience in full-stack development with Django and React, Android development in Kotlin, and machine learning in Python. My work covers backend API integration, relational data modelling with SQLite, and training and evaluating classification models. I am seeking Software Developer and Software Engineer opportunities.</p>
 </div></section>
 
 <section class="sec" id="projects"><div class="wrap">
   <span class="pill rv">Projects</span>
-  <h2 class="h2 rv" style="--d:1">Things I've <em>built</em>.</h2>
-  <div class="cards">
-    <article class="card rv" style="--d:1"><span class="num">01</span><h3>Heart Disease Prediction System</h3><p>A classification model built with scikit-learn on a Kaggle dataset, with data preprocessing and model evaluation. I compared multiple algorithms, reaching about 95% accuracy, and built a local interface where users enter patient features and get a prediction.</p><ul class="tags"><li>Python</li><li>Pandas</li><li>NumPy</li><li>Scikit-learn</li><li>Matplotlib</li></ul></article>
-    <article class="card rv" style="--d:2"><span class="num">02</span><h3>E-Commerce Web Application</h3><p>A full-stack store connecting the frontend to backend APIs. It includes user authentication, product management, shopping-cart functionality and checkout workflows.</p><ul class="tags"><li>Django</li><li>DRF</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>SQLite</li></ul></article>
-    <article class="card rv" style="--d:3"><span class="num">03</span><h3>Complaint &amp; Grievance Management System</h3><p>A complaint-management app where users submit and manage complaints. The React frontend talks to Django backend APIs, and records are stored in an SQLite database.</p><ul class="tags"><li>React</li><li>Vite</li><li>Django</li><li>SQLite</li></ul></article>
+  <h2 class="h2 rv" style="--d:1">Selected <em>projects</em>.</h2>
+  <div class="rows">
+    <article class="row rv"><span class="ic" aria-hidden="true">↗</span><div class="rb"><div class="meta">Android application · Solo project</div><h3>MoodMix</h3><p>AI-assisted music application with music discovery and search, track generation from text prompts, song and lyric analysis, and a personal library. Built with Kotlin and Jetpack Compose using the MVVM architecture.</p><ul class="tags"><li>Kotlin</li><li>Jetpack Compose</li><li>Media3</li><li>MVVM</li><li>ACE-Step</li><li>Qwen2.5-Omni</li></ul></div></article>
+    <article class="row rv"><span class="ic" aria-hidden="true">↗</span><div class="rb"><div class="meta">Full-stack web application</div><h3>Zova</h3><p>E-commerce platform built with Django and SQLite. Features user accounts, product search and filtering, guest and authenticated carts, wishlist, coupons, checkout and an administration panel. <a href="https://github.com/Ankit10869734/shopx" target="_blank" rel="noopener noreferrer">Source code ↗</a></p><ul class="tags"><li>Django</li><li>SQLite</li><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></div></article>
+    <article class="row rv"><span class="ic" aria-hidden="true">↗</span><div class="rb"><div class="meta">Full-stack web application</div><h3>Complaint &amp; Grievance Management</h3><p>Complaint management application where users submit and manage complaints. The React (Vite) frontend is integrated with Django backend APIs, and records are persisted in SQLite.</p><ul class="tags"><li>React</li><li>Vite</li><li>Django</li><li>SQLite</li></ul></div></article>
+    <article class="row rv"><span class="ic" aria-hidden="true">↗</span><div class="rb"><div class="meta">Machine learning</div><h3>Heart Disease Prediction</h3><p>Classification model built with Python and scikit-learn on a Kaggle dataset, including data preprocessing and model evaluation. Multiple algorithms were compared, reaching approximately 95% accuracy on the evaluation dataset. Includes a local interface for entering patient features and obtaining predictions.</p><ul class="tags"><li>Python</li><li>Scikit-learn</li><li>Pandas</li><li>NumPy</li><li>Matplotlib</li></ul></div></article>
   </div>
-  <p class="more rv">More code lives on my <a href="https://github.com/Ankit10869734" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
 </div></section>
 
 <section class="sec clip" id="journey"><div class="wrap">
   <span class="pill rv">Journey</span>
   <h2 class="h2 rv" style="--d:1">Education &amp; <em>training</em>.</h2>
-  <div class="two">
-    <div><h3 class="col rv">Education</h3><ol class="tl">
-      <li class="rv" style="--d:1"><span class="when">2023 – Present</span><h4>Kalinga Institute of Industrial Technology</h4><p>B.Tech in Computer Science and Engineering · CGPA 7.94 · Bhubaneswar, India</p></li>
-      <li class="rv" style="--d:2"><span class="when">Apr 2022 – May 2023</span><h4>Delhi Public School, Megacity</h4><p>Class XII · 88%</p></li>
-      <li class="rv" style="--d:3"><span class="when">July 2021</span><h4>Delhi Public School, Megacity</h4><p>Class X · 95.8%</p></li></ol></div>
-    <div><h3 class="col rv">Training &amp; Certifications</h3><ol class="tl">
-      <li class="rv" style="--d:1"><span class="when">May 2025 – Sep 2025</span><h4>Industrial Training · Ardent Computech Pvt. Ltd.</h4><p>Training in Data Science, Artificial Intelligence and Machine Learning using Python. Implemented a Movie Rating Prediction project.</p></li>
-      <li class="rv" style="--d:2"><span class="when">Jun 2025 – Aug 2025</span><h4>Ethical Hacking Training &amp; Internship · Ethical Edufabrica Pvt. Ltd.</h4><p>Practical training and a project on exploiting and securing a database using SQL injection, in a controlled course environment.</p></li></ol></div>
-  </div>
+  <ul class="tl">
+    <li class="rv"><span class="when">May – Jun 2026</span><h4>Full Stack Web Development using Python &amp; Django</h4><p>Ardent Computech Pvt. Ltd. · Built Zova, an e-commerce web application.</p></li>
+    <li class="rv"><span class="when">May – Sep 2025</span><h4>Data Science, AI &amp; Machine Learning using Python</h4><p>Ardent Computech Pvt. Ltd. · Implemented a Movie Rating Prediction project.</p></li>
+    <li class="rv"><span class="when">Jun – Aug 2025</span><h4>Ethical Hacking Training &amp; Internship</h4><p>Ethical Edufabrica Pvt. Ltd. · Project on exploiting and securing a database through SQL injection, in a controlled course environment.</p></li>
+    <li class="rv"><span class="when">2023 – Present</span><h4>B.Tech, Computer Science &amp; Engineering</h4><p>Kalinga Institute of Industrial Technology, Bhubaneswar · CGPA 7.94</p></li>
+  </ul>
 </div></section>
 
 <section class="sec" id="skills"><div class="wrap">
   <span class="pill rv">Skills</span>
-  <h2 class="h2 rv" style="--d:1">My <em>toolkit</em>.</h2>
-  <div class="skills">
-    <div class="box rv" style="--d:1"><h3>Languages</h3><ul class="chips"><li>Java</li><li>Python</li><li>SQL</li><li>Kotlin</li><li>JavaScript</li></ul></div>
-    <div class="box rv" style="--d:2"><h3>Frameworks &amp; Libraries</h3><ul class="chips"><li>Spring Boot</li><li>Django</li><li>DRF</li><li>React</li><li>Vite</li><li>Pandas</li><li>NumPy</li><li>Scikit-learn</li></ul></div>
-    <div class="box rv" style="--d:3"><h3>Tools &amp; Technologies</h3><ul class="chips"><li>Git</li><li>GitHub</li><li>HTML</li><li>CSS</li><li>Linux</li><li>SQLite</li></ul></div>
+  <h2 class="h2 rv" style="--d:1">Technical <em>skills</em>.</h2>
+  <div class="rows">
+    <div class="row sk rv"><span class="ic" aria-hidden="true">↗</span><div class="rb"><h3>Languages</h3><p>Python · Java · Kotlin · JavaScript · SQL</p></div></div>
+    <div class="row sk rv"><span class="ic" aria-hidden="true">↗</span><div class="rb"><h3>Frameworks &amp; Libraries</h3><p>Django · React · Vite · Spring Boot · Jetpack Compose · Pandas · NumPy · Scikit-learn</p></div></div>
+    <div class="row sk rv"><span class="ic" aria-hidden="true">↗</span><div class="rb"><h3>Tools &amp; Technologies</h3><p>Git · GitHub · Linux · SQLite · HTML · CSS</p></div></div>
   </div>
   <div class="tester rv"><span class="pill">Type tester</span>
-    <div class="ctl"><label>Weight <input type="range" id="tw" min="100" max="900" value="300"></label><label>Size <input type="range" id="ts" min="28" max="140" value="72"></label></div>
-    <div id="tt" contenteditable="true" spellcheck="false" aria-label="Editable sample text">Ankit builds things that ship.</div></div>
+    <div class="ctl"><label>Weight <input type="range" id="tw" min="100" max="900" value="300"></label><label>Size <input type="range" id="ts" min="28" max="120" value="64"></label></div>
+    <div id="tt" contenteditable="true" spellcheck="false" aria-label="Editable sample text">Clean, maintainable code.</div></div>
 </div></section>
 
 <section class="sec clip" id="contact"><div class="wrap">
   <span class="pill rv">Contact</span>
-  <h2 class="h2 rv" style="--d:1">Let's <em>talk</em>.</h2>
-  <div class="grid3">
-    <div class="rv" style="--d:2"><p>Have an opportunity, a project idea, or just want to say hi? Send a message and I'll get back to you soon.</p>
-      <ul class="reach">
-        <li><span>Email</span><a href="mailto:ankitdas10a20dpsm@gmail.com">ankitdas10a20dpsm@gmail.com</a></li>
-        <li><span>Phone</span><a href="tel:+918617299874">+91 86172 99874</a></li>
-        <li><span>GitHub</span><a href="https://github.com/Ankit10869734" target="_blank" rel="noopener noreferrer">Ankit10869734</a></li>
-        <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/ankit-d-686b7a359/" target="_blank" rel="noopener noreferrer">ankit-d-686b7a359</a></li>
-      </ul></div>
-    <form class="f rv" style="--d:3" id="contactForm" novalidate>
-      <label>Name<input type="text" id="fName" autocomplete="name" required></label>
-      <label>Email<input type="email" id="fEmail" autocomplete="email" required></label>
-      <label>Phone <em>(optional)</em><input type="tel" id="fPhone" autocomplete="tel"></label>
-      <label>Message<textarea id="fMsg" rows="5" required></textarea></label>
-      <input class="hp" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
-      <button class="btn" type="submit" id="sendBtn"><span class="btn__c" id="sendLbl">Send message</span><span class="btn__o"><i>→</i><i>→</i></span></button>
-      <p id="st" role="status" aria-live="polite"></p>
-    </form>
-  </div>
+  <h2 class="h2 rv" style="--d:1">Get in <em>touch</em>.</h2>
+  <p class="cl rv" style="--d:2">I am seeking Software Developer and Software Engineer opportunities. Send a message and I will respond promptly, or write to <a class="ul" href="mailto:ankitdas10a20dpsm@gmail.com">ankitdas10a20dpsm@gmail.com</a>.</p>
+  <form class="f rv" style="--d:2" id="contactForm" name="contact" method="POST" action="/" data-netlify="true" data-netlify-honeypot="company" novalidate>
+    <input type="hidden" name="form-name" value="contact">
+    <label>Name<input type="text" id="fName" name="name" autocomplete="name" required></label>
+    <label>Email<input type="email" id="fEmail" name="email" autocomplete="email" required></label>
+    <label>Phone <em>(optional)</em><input type="tel" id="fPhone" name="phone" autocomplete="tel"></label>
+    <label>Message<textarea id="fMsg" name="message" rows="5" required></textarea></label>
+    <input class="hp" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <button class="btn" type="submit" id="sendBtn"><span class="btn__c" id="sendLbl">Send message</span><span class="btn__o"><i>→</i><i>→</i></span></button>
+    <p id="st" role="status" aria-live="polite"></p>
+  </form>
 </div></section>
 </main>
 <footer class="foot"><div class="wrap">
-  <span class="pill">Thanks for visiting</span>
-  <h2>Start <em>building</em> together.</h2>
-  <a class="btn" href="#contact"><span class="btn__c">Say hello</span><span class="btn__o"><i>→</i><i>→</i></span></a>
-  <p><span>© <span id="year"></span> Ankit Das</span><a href="#home">Back to top ↑</a></p>
+  <h2>Open to <em>opportunities</em>.</h2>
+  <div class="soc"><a href="https://github.com/Ankit10869734" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.4-5.27 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg></a><a href="https://www.linkedin.com/in/ankit-d-686b7a359/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a></div>
+  <p class="fb"><span>© <span id="year"></span> Ankit Das</span><a class="ul" href="#home">Back to top ↑</a></p>
 </div></footer>
+<script src="vendor/gsap.min.js"></script><script src="vendor/ScrollTrigger.min.js"></script><script src="vendor/lenis.min.js"></script>
 <script src="js/config.js"></script><script src="js/motion.js"></script><script src="js/contact.js"></script>
 </body>
 </html>
